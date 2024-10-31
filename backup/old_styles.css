@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    background: #24252A;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .navbar {
+    width: 90%;
+    /* margin: 0 auto;
+} */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    /* margin: 0 auto; */
+}
+
+header {
+    background: #c0a570;
+}
+
+/* header::after {
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+.montserrat-thin {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.montserrat-normal {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 375;
+    font-style: normal;
+}
+
+.montserrat-heavy {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+}
+
+.cinzel-normal {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cinzel-heavy {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+/* 
+.logo {
+    float: left;
+    padding-left: 8%;
+    display: flex;
+    align-items: center;
+} */
+
+.logo {
+    float: left;
+    padding-left: 8%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logo img {
+    width: 48px;
+    height: 48px;
+    display: inline;
+}
+
+
+/* .logo-text {
+    margin-left: 12px;
+    font-size: 36px;
+    align-content: center;
+} */
+
+.logo-text {
+    margin-left: 12px;
+    font-size: 36px;
+    display: flex;
+    align-content: center;
+    padding-top: 20px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 50px;
+    padding-right: 5px;
+    padding-top: 25px;
+    position: relative;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #000;
+    font-weight: 400;
+}
+
+/* nav a::before {
+    content: '';
+    display: 'block';
+    height: 5px;
+    width: 100%;
+    background-color: #444;
+
+    position: absolute;
+} */

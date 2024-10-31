@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bread Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/e675dcc8d2.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="nav_bar">
+            
+            <div class="logo">
+                <img src="static/icons/icon-white.png">
+                <div class="logo_text"><h1>Flour Power</h1></div>
+            </div>
+            
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="cart_section">
+                <select name="currency" class="currency_dropdown">
+                    <option value="usd">US (USD $)</option>
+                    <option value="eur">EU (EUR €)</option>
+                    <option value="gbp">UK (GBP £)</option>
+                    <option value="cad">CA (CAD $)</option>
+                </select>
+                <a class="cart" href="#">
+                    <button>
+                        <img src="static/icons/cart-white.png" alt="cart icon">
+                    </button>
+                </a>
+            </div>
+        </div>
+        <hr>
+        <div class="page_heading">
+            <h6>WELCOME TO FLOUR POWER</h6>
+            <h2>FINISHED WITH HARD WORK & GRATITUDE</h2>            
+            <button class="shop_now">
+                <span>SHOP NOW</span>
+                <img src="static/icons/newtab.png" alt="Shop opens in new tab">
+            </button>
+        </div>
+    </header>
+    <div class="middle_section">
+        <div class="middle_text">
+            <div class="inner_div">
+                <h6>OUR STORY</h6>
+                <h3>HOW WE GREW UP TO LEAD THE WORLD MARKET</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed nisi odio. Nulla dictum nunc at velit egestas, rhoncus ornare ante congue. Fusce egestas lobortis dictum.</p>
+                <button class="learn_more">
+                    <span>LEARN MORE</span>
+                    <img src="static/icons/newtab.png" alt="Shop opens in new tab">
+                </button>
+            </div>  
+        </div>
+        <div class="middle_images">
+            <img class="middle_1" src="static/middle_2.jpg">
+            <img class="middle_2" src="static/middle_1.jpg" alt="">
+        </div>
+    </div>
+    <hr>
+    <div class="popular_collections">
+        <div class="collection_heading">
+            <div>
+                <h6>OUR SHOP</h6>
+                <h3>POPULAR ITEMS</h3>
+            </div>
+            <button class="go_to_shop">
+                <span>GO TO SHOP</span>
+                <img src="static/icons/newtab.png" alt="Shop opens in new tab">
+            </button>
+        </div>
+        <div class="card_slider">
+            <i id="left_slider_button" class="fa-solid fa-angle-left" style="color: #ffffff;"></i>
+            <ul class="carousel">
+                <li class="card">
+                    <img src="static/croissant_1.webp"> 
+                    <h5>Croissant</h5>
+                </li>
+                <li class="card">
+                    <img src="static/homemade_bread.jpeg"> 
+                    <h5>Homemade Bread</h5>
+                </li>
+                <li class="card">
+                    <img src="static/white_bread.jpeg"> 
+                    <h5>White Bread</h5>
+                </li>
+                <li class="card">
+                    <img src="static/swiss_buns.webp"> 
+                    <h5>Swiss Buns</h5>
+                </li>
+                <li class="card">
+                    <img src="static/baguette.jpeg"> 
+                    <h5>Baguette</h5>
+                </li>
+            </ul>
+            <i id="right_slider_button" class="fa-solid fa-angle-right" style="color: #ffffff;"></i>
+        </div>
+    </div>
+    <div class="testimonials">
+
+    </div>
+    <footer>
+        <div class="footer_container">
+            <div class="inner_footer_container">
+                <div class="newsletter">
+                    <h4>JOIN OUR NEWSLETTER</h4>
+                    <div class="newsletter_inner_div">
+                        <input type="text" name="email_address" id="email_address" placeholder="Email Address"/>
+                        <button class="subscribe_button">
+                            <span>SUBSCRIBE</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="page_directory">
+                    <h5>PAGES</h5>
+                    <hr id="directory_line">
+                    <ul class="directory_list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Ingredients</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="contact_info">
+                <p>Website: <a target="_blank" rel="noopener noreferrer" href="https://www.zarghamibrahim.com">www.zarghamibrahim.com</a></p>
+                <p>Email: <a href="mailto:zargham.ibrahim1@gmail.com">zargham.ibrahim1@gmail.com</a></p>
+                <div class="socials">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/zargham-i">
+                        <img src="static/icons/github.png" alt="GitHub Logo">
+                    </a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/zargham-ibrahim/">
+                        <img src="static/icons/linkedin.png" alt="LinkedIn Logo">
+                    </a>
+                </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="baguette_picture">
+        <!-- <img class="transparent_baguette" src="static/baguette_transparent_1.png"> -->
+        <img class="transparent_cookie" src="static/cookie.png">
+    </div>
+</body>
+
+</html>
