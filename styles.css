@@ -341,7 +341,13 @@ nav {
 }
 
 .popular_collections {
-    padding: calc(0.667*9vw) 5% 0px 5.5%;
+    padding: calc(0.667*9vw) 0% 0px 0%;
+}
+
+.collection_heading {
+    display: flex;
+    justify-content: left;
+    padding: 0% 5%;
 }
 
 .popular_collections h6 {
@@ -401,11 +407,6 @@ nav {
 .go_to_shop:hover {
     background-color: #3f5a8f;
     filter: invert(1);
-}
-
-.collection_heading {
-    display: flex;
-    justify-content: left;
 }
 
 .testimonials {
@@ -599,8 +600,28 @@ footer {
 }
 
 .card img {
-    height: 250px;
+    /* height: 500px; */
+    width: 100%;
+    /* object-fit: cover; */
     object-fit: cover;
+}
+
+.card {
+    list-style: none;
+    height: 100%;
+    /* width: 100%; */
+    cursor: pointer;
+    filter: grayscale(0.2);
+}
+
+.card:hover {
+    padding: 0.5%;
+    filter: grayscale(0);
+}
+
+.carousel {
+    transition: all 0.25s ease 0s;
+    scroll-behavior: smooth;
 }
 
 .card h5 {
@@ -609,20 +630,17 @@ footer {
     font-optical-sizing: auto;
     font-weight: 400; /* 400-900 */
     font-style: normal;
-    font-size: 0.8rem;
-}
-
-.card {
-    list-style: none;
-    height: 300px;
+    font-size: 1.15rem;
+    padding-top: 0.5%;
 }
 
 .carousel {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 3) - 12px);
-    gap: 16px;
-    overflow:hidden;
+    grid-auto-columns: calc((100% / 4) - 20px);
+    gap: 20px;
+    overflow: hidden;
+    padding: 2% 5% 0% 5%;
 }
 
 .card_slider {
@@ -634,7 +652,7 @@ footer {
 .card_slider i {
     height: 50px;
     width: 50px;
-    background: #c0a570;
+    background: rgb(188, 164, 116);
     text-align: center;
     line-height: 50px;
     border-radius: 50%;
@@ -642,26 +660,33 @@ footer {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.45);
     font-size: 1.25rem;
+    transition: all 0.25s ease 0s;
+    color: #ffffff;
+    z-index: 1;
+}
+
+.card_slider i:hover {
+    background: rgb(164, 141, 95);
 }
 
 .card_slider i:first-child {
-    left: -22px;
+    left: 25px;
 }
 
 .card_slider i:last-child {
-    right: -22px;
+    right: 25px;
 }
 
 @media screen and (max-width: 900px) {
-    .card_slider .carousel {
-        grid-auto-columns: calc((100% / 2) - 9px);
+    .carousel {
+        grid-auto-columns: calc((100% / 3) - 20px);
     }
 }
 
 @media screen and (max-width: 600px) {
-    .card_slider .carousel {
-        grid-auto-columns: 100%;
+    .carousel {
+        grid-auto-columns: calc((100% / 2) - 20px)
     }
 }
